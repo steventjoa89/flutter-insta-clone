@@ -14,7 +14,8 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Instagram Clone',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Colors.white,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       initialRoute: Routes.HOME,
       getPages: AppPages.routes,

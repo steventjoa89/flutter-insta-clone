@@ -11,6 +11,7 @@ import 'package:instagram_clone/app/modules/home/pages/shop_page.dart';
 class HomeController extends GetxController {
   var _selectedPageIndex = 0.obs;
   List<Post> posts = mockPosts;
+  List<String> categories = mockCategories;
 
   static const List<Widget> _appPages = [
     HomePage(),

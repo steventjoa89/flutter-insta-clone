@@ -82,3 +82,12 @@ final List<Post> mockPosts = [
       isLiked: true,
       isBookmarked: true),
 ];
+
+final List<String> mockCategories = [
+  'steven',
+  'novi',
+  'stevennovi',
+  'novisteven',
+  'iloveyou',
+  'missyou',
+];

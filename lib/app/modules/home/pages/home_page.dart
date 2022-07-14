@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:instagram_clone/app/data/mock.dart';
 import 'package:instagram_clone/app/widgets/add_story_card.dart';
 import 'package:instagram_clone/app/widgets/custom_home_app_bar.dart';
+import 'package:instagram_clone/app/widgets/post_card.dart';
 import 'package:instagram_clone/app/widgets/story_card.dart';
 
 import '../controllers/home_controller.dart';
@@ -40,6 +41,11 @@ class HomePage extends GetView<HomeController> {
               Divider(height: 1),
             ],
           ),
+        ),
+        SliverList(
+          delegate: SliverChildBuilderDelegate((context, index) {
+            return PostCard();
+          }, childCount: 80),
         )
       ],
     );

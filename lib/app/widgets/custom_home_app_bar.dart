@@ -8,7 +8,8 @@ class CustomHomeAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
-      backgroundColor: Colors.transparent,
+      backgroundColor: Colors.white,
+      elevation: 1,
       pinned: true,
       centerTitle: false,
       title: Text(

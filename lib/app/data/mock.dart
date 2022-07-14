@@ -1,4 +1,5 @@
 import 'package:instagram_clone/app/models/post.dart';
+import 'package:instagram_clone/app/models/reel.dart';
 import 'package:instagram_clone/app/models/story.dart';
 import 'package:instagram_clone/app/models/user.dart';
 
@@ -81,6 +82,84 @@ final List<Post> mockPosts = [
       totalComments: '786',
       isLiked: true,
       isBookmarked: true),
+];
+
+final List<Reel> mockReels = [
+  Reel(
+    postedBy: currentUser,
+    imageUrl: 'https://picsum.photos/id/1048/800/1080',
+    audioTitle: '周杰倫 - 聽媽媽的話',
+    location: 'Singapore',
+    caption: 'This is caption This is caption.',
+    totalLikes: '791K',
+    totalComments: '5641',
+    isLiked: true,
+  ),
+  Reel(
+    postedBy: currentUser,
+    imageUrl: 'https://picsum.photos/id/1049/800/1080',
+    audioTitle: '周杰倫 - 聽媽媽的話',
+    location: 'Singapore',
+    caption: 'This is caption This is caption This is caption.',
+    totalLikes: '191K',
+    totalComments: '6241',
+    isLiked: false,
+  ),
+  Reel(
+    postedBy: currentUser,
+    imageUrl: 'https://picsum.photos/id/1050/800/1080',
+    audioTitle: '周杰倫 - 聽媽媽的話',
+    location: 'Jakarta',
+    caption:
+        'This is caption This is caption This is caption This is caption This is caption This is caption This is caption This is caption This is caption',
+    totalLikes: '21K',
+    totalComments: '524',
+    isLiked: true,
+  ),
+  Reel(
+    postedBy: currentUser,
+    imageUrl: 'https://picsum.photos/id/1051/800/1080',
+    audioTitle: '周杰倫 - 聽媽媽的話',
+    location: 'Jakarta',
+    caption:
+        'This is caption This is caption This is caption This is caption This is caption This is caption This is caption This is caption This is caption',
+    totalLikes: '21K',
+    totalComments: '524',
+    isLiked: true,
+  ),
+  Reel(
+    postedBy: currentUser,
+    imageUrl: 'https://picsum.photos/id/1052/800/1080',
+    audioTitle: '周杰倫 - 聽媽媽的話',
+    location: 'Jakarta',
+    caption:
+        'This is caption This is caption This is caption This is caption This is caption This is caption This is caption This is caption This is caption',
+    totalLikes: '21K',
+    totalComments: '524',
+    isLiked: true,
+  ),
+  Reel(
+    postedBy: currentUser,
+    imageUrl: 'https://picsum.photos/id/1053/800/1080',
+    audioTitle: '周杰倫 - 聽媽媽的話',
+    location: 'Jakarta',
+    caption:
+        'This is caption This is caption This is caption This is caption This is caption This is caption This is caption This is caption This is caption',
+    totalLikes: '21K',
+    totalComments: '524',
+    isLiked: true,
+  ),
+  Reel(
+    postedBy: currentUser,
+    imageUrl: 'https://picsum.photos/id/1054/800/1080',
+    audioTitle: '周杰倫 - 聽媽媽的話',
+    location: 'Jakarta',
+    caption:
+        'This is caption This is caption This is caption This is caption This is caption This is caption This is caption This is caption This is caption',
+    totalLikes: '21K',
+    totalComments: '524',
+    isLiked: true,
+  ),
 ];
 
 final List<String> mockCategories = [

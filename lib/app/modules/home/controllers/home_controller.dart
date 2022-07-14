@@ -2,6 +2,7 @@ import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:instagram_clone/app/data/mock.dart';
 import 'package:instagram_clone/app/models/post.dart';
+import 'package:instagram_clone/app/models/reel.dart';
 import 'package:instagram_clone/app/modules/home/pages/explore_page.dart';
 import 'package:instagram_clone/app/modules/home/pages/home_page.dart';
 import 'package:instagram_clone/app/modules/home/pages/profile_page.dart';
@@ -12,6 +13,7 @@ class HomeController extends GetxController {
   var _selectedPageIndex = 0.obs;
   List<Post> posts = mockPosts;
   List<String> categories = mockCategories;
+  List<Reel> reels = mockReels;
 
   static const List<Widget> _appPages = [
     HomePage(),

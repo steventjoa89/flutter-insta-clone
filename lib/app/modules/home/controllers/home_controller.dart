@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
+import 'package:instagram_clone/app/data/mock.dart';
+import 'package:instagram_clone/app/models/post.dart';
 import 'package:instagram_clone/app/modules/home/pages/explore_page.dart';
 import 'package:instagram_clone/app/modules/home/pages/home_page.dart';
 import 'package:instagram_clone/app/modules/home/pages/profile_page.dart';
@@ -8,6 +10,7 @@ import 'package:instagram_clone/app/modules/home/pages/shop_page.dart';
 
 class HomeController extends GetxController {
   var _selectedPageIndex = 0.obs;
+  List<Post> posts = mockPosts;
 
   static const List<Widget> _appPages = [
     HomePage(),
@@ -23,22 +26,4 @@ class HomeController extends GetxController {
   void onIconTapped(int index) {
     _selectedPageIndex.value = index;
   }
-
-  // final count = 0.obs;
-  // @override
-  // void onInit() {
-  //   super.onInit();
-  // }
-
-  // @override
-  // void onReady() {
-  //   super.onReady();
-  // }
-
-  // @override
-  // void onClose() {
-  //   super.onClose();
-  // }
-
-  // void increment() => count.value++;
 }

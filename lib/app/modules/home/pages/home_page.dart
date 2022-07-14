@@ -44,8 +44,8 @@ class HomePage extends GetView<HomeController> {
         ),
         SliverList(
           delegate: SliverChildBuilderDelegate((context, index) {
-            return PostCard();
-          }, childCount: 80),
+            return PostCard(post: controller.posts[index]);
+          }, childCount: controller.posts.length),
         )
       ],
     );

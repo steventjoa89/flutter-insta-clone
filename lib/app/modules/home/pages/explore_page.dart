@@ -11,6 +11,7 @@ import 'package:instagram_clone/app/widgets/persistent_header.dart';
 
 import '../controllers/home_controller.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:video_player/video_player.dart';
 
 class ExplorePage extends GetView<HomeController> {
   const ExplorePage({Key? key}) : super(key: key);
@@ -48,19 +49,20 @@ class ExplorePage extends GetView<HomeController> {
               itemCount: 50,
               itemBuilder: (BuildContext context, int index) {
                 return ExploreTile(
-                    post: Post(
-                        id: '$index',
-                        postedBy: currentUser,
-                        imageUrl:
-                            'https://picsum.photos/id/${index + 10}/400/${index % 20 == 2 ? 805 : 400}',
-                        title: 'title',
-                        location: 'New York',
-                        caption: 'this is caption',
-                        postedTimeAgo: 'a few seconds ago',
-                        totalLikes: '1767',
-                        totalComments: '778',
-                        isLiked: true,
-                        isBookmarked: true));
+                  post: Post(
+                      id: '$index',
+                      postedBy: currentUser,
+                      imageUrl:
+                          'https://picsum.photos/id/${index + 10}/400/${index % 20 == 2 ? 805 : 400}',
+                      title: 'title',
+                      location: 'New York',
+                      caption: 'this is caption',
+                      postedTimeAgo: 'a few seconds ago',
+                      totalLikes: '1767',
+                      totalComments: '778',
+                      isLiked: true,
+                      isBookmarked: true),
+                );
               },
             )
           ],

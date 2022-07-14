@@ -27,4 +27,51 @@ class HomeController extends GetxController {
   void onIconTapped(int index) {
     _selectedPageIndex.value = index;
   }
+
+  @override
+  void onInit() {
+    super.onInit();
+  }
+
+  @override
+  void onClose() {
+    super.onClose();
+  }
+
+  /**
+   * Video Player Configuration:
+   * 
+   * 
+  late VideoPlayerController videoPlayerController;
+  late Future<void> videoPlayerFuture;
+
+  -- INIT
+  videoPlayerController = VideoPlayerController.network(
+        'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4');
+    videoPlayerFuture = videoPlayerController.initialize();
+    videoPlayerController.setLooping(true);
+    videoPlayerController.play();
+
+  -- CLOSE
+    videoPlayerController.dispose();
+
+
+  -- WIDGET
+  : FutureBuilder(
+      future: controller.videoPlayerFuture,
+      builder: (context, snapshot) {
+        if (snapshot.connectionState ==
+            ConnectionState.done) {
+          return AspectRatio(
+            aspectRatio: controller
+                .videoPlayerController.value.aspectRatio,
+            child:
+                VideoPlayer(controller.videoPlayerController),
+          );
+        } else {
+          return Center(child: CircularProgressIndicator());
+        }
+      },
+    );
+   */
 }

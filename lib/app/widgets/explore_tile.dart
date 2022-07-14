@@ -13,22 +13,20 @@ class ExploreTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Stack(
-        alignment: Alignment.topRight,
-        children: [
-          Image(image: NetworkImage(post.imageUrl)),
-          Container(
-            padding: EdgeInsets.all(8),
-            child: Icon(
-              post.id == '0' || post.id == '10'
-                  ? Icons.collections_rounded
-                  : null,
-              color: Colors.white,
-            ),
-          )
-        ],
-      ),
+    return Stack(
+      alignment: Alignment.topRight,
+      children: [
+        Image(image: NetworkImage(post.imageUrl)),
+        Container(
+          padding: EdgeInsets.all(8),
+          child: Icon(
+            post.id == '0' || post.id == '10'
+                ? Icons.collections_rounded
+                : null,
+            color: Colors.white,
+          ),
+        )
+      ],
     );
   }
 }

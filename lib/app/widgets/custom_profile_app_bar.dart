@@ -5,9 +5,11 @@ class CustomProfileAppBar extends StatelessWidget {
   const CustomProfileAppBar({
     Key? key,
     required this.user,
+    required this.showBottomMenuModal,
   }) : super(key: key);
 
   final User user;
+  final Function showBottomMenuModal;
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +43,7 @@ class CustomProfileAppBar extends StatelessWidget {
           color: Colors.black,
         ),
         IconButton(
-          onPressed: () {},
+          onPressed: () => showBottomMenuModal(context),
           icon: Icon(Icons.dehaze_outlined),
           color: Colors.black,
         ),

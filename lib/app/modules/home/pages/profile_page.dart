@@ -17,7 +17,9 @@ class ProfilePage extends GetView<HomeController> {
       child: NestedScrollView(
         headerSliverBuilder: (context, index) {
           return [
-            CustomProfileAppBar(user: currentUser),
+            CustomProfileAppBar(
+                user: currentUser,
+                showBottomMenuModal: controller.showBottomMenuModal),
             SliverToBoxAdapter(
               child: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8.0),

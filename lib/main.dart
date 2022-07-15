@@ -17,9 +17,20 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.white,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        dividerColor: Colors.transparent,
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
       ),
       initialRoute: Routes.HOME,
       getPages: AppPages.routes,
     );
   }
 }
+
+/**
+ * TODO
+ * Login 
+ * 1 Video di feed
+ * Search History
+ * setting popup & setting menu
+ */

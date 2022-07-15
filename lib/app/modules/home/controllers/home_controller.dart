@@ -15,6 +15,8 @@ class HomeController extends GetxController {
   List<String> categories = mockCategories;
   List<Reel> reels = mockReels;
 
+  var isStoryExpandOpen = false.obs;
+
   static const List<Widget> _appPages = [
     HomePage(),
     ExplorePage(),

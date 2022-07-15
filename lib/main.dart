@@ -32,5 +32,4 @@ class MyApp extends StatelessWidget {
  * Login 
  * 1 Video di feed
  * Search History
- * setting popup & setting menu
  */
